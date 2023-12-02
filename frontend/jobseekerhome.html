@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/jobseeker.css">
+</head>
+<body>
+    <div id="nav" style="display:flex;justify-content: right;">
+        <button id="logout">logout</button>
+    </div>
+    <h3 id="username"></h3>
+
+
+    <div id="updatediv">
+        <form id="bioform">
+            <label for="">Bio:</label>
+            <input id="bio" type="text" >
+            <br>
+            <label for="">Skill:</label>
+            <input id=skill type="text" >
+            <br>
+            <label for="">experience:</label>
+            <select id="experience" name="status" >
+              <option value="" disabled selected>Select experience</option>
+              <option value="Entry Level">Entry Level</option>
+              <option value="Mid Level">Mid Level</option>
+              <option value="Senior">Senior</option>
+          </select>
+          <button type="submit">submit</button>
+          </form>
+          
+    </div>
+    <div>
+        <p>toggle to get job recomentation</p>
+        <div class="toggle-container" onclick="toggleButton()">
+            <div class="toggle-slider"></div>
+        </div>
+    </div>
+    <h4 id="recmsg"></h4>
+    <div id="recomentation">
+        
+    </div>
+    
+</body>
+<script src="./scripts/jobseekerhome.js"></script>
+</html>
